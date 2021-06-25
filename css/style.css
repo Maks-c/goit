@@ -34,27 +34,36 @@ body {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0px;
   padding: 0px;
 }
 
-p{
+p {
   margin: 0px;
   padding: 0px;
 }
 
 /*======================HEADER======================*/
+.section {
+  /* background-color: #ffffff; */
+  border-bottom: 1px solid #ececec;
+}
 
 .container {
   display: flex;
   align-items: center;
   width: 1200px;
+
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
 }
 
 .site-nav {
@@ -64,8 +73,7 @@ p{
 
 .site-list {
   display: flex;
-  margin-left: 90px;
-  
+  margin-left: 93px;
 }
 
 .site-list .item + .item {
@@ -95,8 +103,8 @@ p{
 
 .site-link {
   display: block;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--secondary-text-color);
 }
 
@@ -111,8 +119,8 @@ p{
 
 .contact-link {
   display: block;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--primary-text-color);
 }
 
@@ -144,7 +152,10 @@ p{
   padding-top: 60px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid tomato;
+}
+
+.footer-list .footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .logo-footer {
@@ -156,6 +167,7 @@ p{
 }
 
 .footer-link {
+  display: block;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -169,10 +181,12 @@ p{
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  margin-top: 20px;
 }
 
 .adress-text {
   color: #ffffff;
+  margin-bottom: 9px;
 }
 /* ======================END FOOTER====================== */
 
@@ -186,14 +200,13 @@ p{
   text-align: center;
 }
 
-.hero-container{
+.hero-container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
-  
+  /* outline: 2px solid tomato; */
 }
 
 .hero-title {
@@ -210,6 +223,7 @@ p{
   width: 200px;
   height: 50px;
   border-radius: 4px;
+  border: none;
   background-color: var(--accent-color);
   color: #ffffff;
   font-family: inherit;
@@ -236,30 +250,26 @@ p{
 }
 
 .features-section {
-  /* width: 1200px; */
-  padding-left: 15px;
-  padding-right: 15px;
+  /* padding-left: 15px;
+  padding-right: 15px; */
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid tomato;
-  
+  /* outline: 2px solid tomato; */
 }
 
 .features-list {
-  display: flex;
   width: 1200px;
+  display: flex;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 94px;
   padding-bottom: 47px;
-
 }
 
 .features-list .item + .item {
   padding-left: 30px;
-  
 }
 
 .features-title {
@@ -275,8 +285,6 @@ p{
 }
 
 .text-description {
-  
-
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -292,16 +300,17 @@ p{
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 94px;
-  outline: 2px solid tomato;
-  
+  /* outline: 2px solid tomato; */
 }
-
-
 
 .work-list {
   display: flex;
   justify-content: space-between;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
+}
+
+.img-item {
+  display: block;
 }
 
 .work-section-title {
@@ -316,7 +325,6 @@ p{
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  outline: 2px solid tomato;
 }
 
 /* ======================END WORK ACTIVITY====================== */
@@ -329,61 +337,58 @@ p{
   color: var(--secondary-text-color);
 }
 
-.team-foto{
+.team-foto {
   display: block;
 }
 
-.team-position{
+.team-position {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid tomato;
-
 }
 
 .team-title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.17;
+  line-height: 1.16;
   text-align: center;
 }
 
-.team-list{
+.team-list {
   display: flex;
   justify-content: center;
-  
 }
 
-.team-item{
-  
+.team-item {
+  display: flex;
+  flex-direction: column;
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
 }
 
 .title-command-description {
-  display: block;
-  
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.18px;
+  line-height: 1.25;
   text-align: center;
-  outline:2px solid tomato;
+  letter-spacing: 0.03em;
 }
 
 .command-description {
-  
+  margin-bottom: 30px;
   color: var(--primary-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  outline:2px solid tomato; 
 }
 
-.team-list .team-item:not(:last-child){
+.team-list .team-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -400,15 +405,16 @@ p{
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  /* margin-top: 94px; */
-  /* margin-bottom: 94px; */
   padding-bottom: 94px;
-  outline: 2px solid tomato;
 }
 
 .list-of-our-works {
   display: flex;
   flex-wrap: wrap;
+}
+
+.list-of-our-works .img {
+  display: block;
 }
 
 .filter-item {
@@ -431,17 +437,13 @@ p{
   justify-content: center;
   margin-bottom: 50px;
   padding-top: 94px;
-
-}
-
-.filter .item + .item {
-  margin-left: 8px;
 }
 
 .filter-btn {
   width: 145px;
   height: 38px;
   border-radius: 4px;
+  border: none;
 
   background-color: var(--primary-bg-color-filter);
   color: var(--secondary-text-color);
@@ -473,6 +475,12 @@ p{
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
+  margin-top: 4px;
 }
 
-/* ======================END OUR WORK SECTION====================== */
+.position-text {
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-top: 20px;
+}
+/* ======================END OUR WORK SECTION====================== */ ;
